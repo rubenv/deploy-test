@@ -6,6 +6,12 @@ on:
       - production
 
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "Plan!"
+        
   deployment:
     runs-on: ubuntu-latest
     environment: production
